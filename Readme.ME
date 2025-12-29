@@ -1,0 +1,95 @@
+Energy Market Commercial Analysis
+
+Overview
+This project presents a commercial analysis of energy markets using historical crude oil price data and simulated trade information. The objective is to understand how market price movements translate into changes in commercial value and to communicate those insights clearly through structured analysis and simple reporting.
+
+The analysis mirrors the type of work typically performed to support market-facing or commercial teams, with an emphasis on clarity, accuracy, and practical interpretation rather than complex modelling.
+
+Objectives
+The project was designed around the following objectives:
+
+- Analyse crude oil price movements over time to understand market behaviour
+- Estimate how changes in market prices affect the value of commercial positions
+- Identify whether value impact is evenly distributed or concentrated in specific periods
+- Present findings in a clear, decision-oriented format suitable for discussion
+
+Hypotheses
+Before starting the analysis, the following hypotheses were defined:
+
+1. Short-term crude oil prices exhibit noticeable volatility rather than a smooth trend.
+2. Changes in market prices have a direct and measurable impact on the estimated value of commercial positions.
+3. Commercial value impact is not evenly distributed over time, but concentrated in a small number of periods.
+4. Buy and sell positions contribute differently to overall value impact.
+
+These hypotheses guided the structure of the analysis and the choice of visuals.
+
+Data
+The project uses two datasets:
+
+1. Market Prices
+- Historical crude oil prices (USD)
+- Daily frequency
+- Used to analyse price trends and volatility
+
+2. Trades (Simulated)
+- Buy and sell positions with volumes and trade prices
+- Simulated to reflect realistic commercial activity
+- Used to estimate how market price movements affect trade value
+
+Methodology
+
+Data Preparation
+- SQL was used to structure and aggregate market and trade data.
+- Only light transformations were applied to prepare clean, analysis-ready outputs.
+- The focus was on accuracy and transparency rather than complex data engineering.
+
+Analysis Approach
+- Market prices were analysed over time to identify trends and short-term variability.
+- An estimated value impact was calculated by comparing trade prices with prevailing market prices.
+- Results were aggregated to compare buy vs sell impact and to assess time-based concentration on a monthly basis.
+
+Reporting
+- Excel was used as the primary analysis and reporting tool.
+- Visuals were designed to be simple, readable, and commercially focused.
+
+Key Visuals
+The analysis is summarised using three core visuals:
+
+1. Market Price Trend  
+   Illustrates how crude oil prices evolved over the analysis period, highlighting short-term volatility.
+
+2. Value Impact by Trade Direction  
+   Compares estimated value impact between buy and sell positions, making directional effects immediately visible.
+
+3. Monthly Estimated Value Impact 
+   Aggregates daily impacts by month to reveal periods where gains or losses were concentrated.
+
+These visuals are available in the `visuals/` folder.
+
+Outcomes & Findings
+The analysis supported the initial hypotheses:
+
+- Crude oil prices showed noticeable volatility rather than a stable trend.
+- Estimated value impact fluctuated in line with market movements, confirming sensitivity to price changes.
+- Buy-side positions contributed most of the negative value impact, while sell-side positions partially offset losses.
+- Value impact was concentrated in a small number of months, rather than evenly spread across the period analysed.
+
+
+Tech Stack Used
+
+- SQL: Data preparation and aggregation
+- Excel: Core analysis, summarisation, and visualisation
+
+ Learnings & Challenges
+
+Key learnings from this project include:
+
+- Small market price movements can translate into significant value changes when applied to commercial volumes.
+- Aggregating results over longer periods (e.g. monthly) helps reduce noise and highlight meaningful patterns.
+- Clear visuals and concise summaries are often more valuable than complex models when communicating insights.
+
+Challenges encountered:
+- Handling date formats and ensuring consistency across data sources
+- Balancing analytical depth with clarity to avoid overcomplicating the analysis
+
+These challenges were addressed through careful data validation and by prioritising readability in reporting.
