@@ -1,3 +1,8 @@
+-- ============================================================
+-- Query 4: Daily Aggregated Value Impact
+-- Purpose: Summarise estimated value impact at a daily level to highlight periods of higher gains or losses and support time-based analysis.
+-- ============================================================
+
 SELECT
     CAST(t.trade_date AS date) AS trade_date,
     ROUND(
@@ -96,3 +101,4 @@ trade_date	total_daily_value_impact_usd
 2024-03-27	-2825565.19
 2024-03-28	-492202.95
 2024-03-29	8291.8
+
