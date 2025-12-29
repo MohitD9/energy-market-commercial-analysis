@@ -1,3 +1,8 @@
+-- ============================================================
+-- Query 2: Monthly Average Market Prices
+-- Purpose: Aggregate daily crude oil prices at a monthly level to support month-on-month comparison and reduce short-term noise.
+-- ============================================================
+
 SELECT
     FORMAT(CAST([date] AS date), 'yyyy-MM') AS month,
     ROUND(AVG(CAST(market_price_usd AS float)), 2) AS avg_monthly_price
@@ -14,4 +19,5 @@ month	avg_monthly_price
 2024-01	76.72
 2024-02	75.63
 2024-03	76.09
+
 
