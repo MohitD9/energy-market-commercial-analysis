@@ -1,3 +1,8 @@
+-- ============================================================
+-- Query 3: Daily Market Prices with Short-Term Trend Indicator
+-- Purpose: Analyse daily market price movements and smooth short-term volatility using a 7-day rolling average.
+-- ============================================================
+
 SELECT
     t.trade_id,
     CAST(t.trade_date AS date) AS trade_date,
@@ -141,3 +146,4 @@ T0078	2024-03-27	Buy	84482	86.8	76.96	-831302.88
 T0008	2024-03-28	Buy	51130	89.74	77.02	-650373.6
 T0018	2024-03-28	Sell	61545	79.59	77.02	158170.65
 T0090	2024-03-29	Sell	82918	76.82	76.72	8291.8
+
