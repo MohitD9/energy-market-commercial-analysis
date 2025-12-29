@@ -1,3 +1,8 @@
+-- ============================================================
+-- Query 1: Trade-Level Estimated Value Impact
+-- Purpose: -- Estimate how differences between trade prices and prevailing market prices translate into changes in commercial value, split by buy and sell positions.
+-- ============================================================
+
 SELECT
     CAST([date] AS date) AS price_date,
     ROUND(CAST(market_price_usd AS float), 2) AS market_price_usd,
@@ -144,5 +149,6 @@ price_date	market_price_usd	avg_price_7d
 2024-03-27	76.96	76.9
 2024-03-28	77.02	77.01
 2024-03-29	76.72	76.96
+
 
 
