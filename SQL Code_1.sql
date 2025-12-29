@@ -11,6 +11,8 @@ SELECT
 FROM market_prices_large
 ORDER BY price_date;
 
+O/P
+
 price_date	market_price_usd	avg_price_7d
 2023-10-02	82.3	82.3
 2023-10-03	82.22	82.26
@@ -142,4 +144,5 @@ price_date	market_price_usd	avg_price_7d
 2024-03-27	76.96	76.9
 2024-03-28	77.02	77.01
 2024-03-29	76.72	76.96
+
 
